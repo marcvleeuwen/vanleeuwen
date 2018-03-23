@@ -177,15 +177,19 @@ footer{
 
 #heal{
     background: #2ecc71;
+    background-image: url("https://images.unsplash.com/photo-1468434453985-b1ca3b555f00?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=002b09a39c1dd79d7f1eb2ff46cefde9&auto=format&fit=crop&w=1950&q=80");
     color: #F7FFF7;
 }
 #heal>.contentWrapper{
     display: flex;
     flex-direction: column;
+    background-color: rgba(130, 120, 160, 0.1);
 }
-#heal>.contentWrapper>.devImage{
+#heal>.contentWrapper>healSections{
     display: flex;
+    flex-direction: column;
     justify-content: space-between ;
+    flex: 1;
 }
 
 #defend{
