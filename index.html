@@ -13,22 +13,26 @@
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#FF6B6B">
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="./JS/contact.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>    
     <title>Marc van Leeuwen</title>
 </head>
 <body>
     <div id='landing' class="landing bg-red">
-            <nav class="navbar bg-red">
-                <a class="navbar-brand" href="#landing" style="border-bottom: none">
-                    <img src="./assets/svg/solid-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <nav class="navbar navbar-expand-lg bg-red">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <a class="navbar-brand d-none d-lg-flex" href="#landing" style="border-bottom: none">
+                    <img src="./assets/svg/solid-logo.svg" width="30" height="30" class="d-felx align-top" alt="">
                 </a>
-                <ul class="nav">
+                <ul class="navbar-nav d-flex justify-content-end text-center w-100">
                     <li class="nav-item">
                         <a class="nav-link text-black" href="#develop">Develop</a>
                     </li>
@@ -42,7 +46,8 @@
                         <a class="nav-link cta cta-outline-terquoise" href="#contact">Contact Me</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
         <div class="wrapper">
             <div class="center">
                 <img src="./assets/svg/holo-logo.svg" alt="">
@@ -59,7 +64,7 @@
                         <h1>I'm a <code>code monkey</code> and I have skills.</h1>
                         <p>Mobile and Web development specialist</p>
                     </span>
-                    <img src="./assets/images/code.PNG" alt="" style="max-height: 60vh;">
+                    <img src="./assets/images/code.PNG" alt="">
                 </div>
                 <span style="display:flex; flex: 1; align-items:center;">
                     <h2>Sometimes it just take a <code>code monkey</code> to turn your <strong class="text-yellow">DESIGN</strong> into a <strong class="text-yellow">REALITY</strong>!</h2>
@@ -75,23 +80,30 @@
                             <h1>- Deep tissue massage <br>
                                 - Liquid body work</h1>
                         </span>
-                        <span class="healSections" style="display: flex; flex-direction: column; flex:1; justify-content: flex-end; align-self: flex-end; padding-bottom: 4%;">
+                        <span class="healSections bottom_right">
                             <h5>Carrying the world on you shoulders can become tiring,</h5>
                             <h1>I'm here to help</h1>
                         </span>
                 </div>
             </section>
-            <section id="defend" class="contentWrapper">
-                    <h3>It is apparent that violent crimes are on the rise.</h3>
-                    <p>I will enable you to survive the worst of these situations.</p>
-                    
-                    <h1>Krav Maga <br> It's not pretty but highly effective</h1>
-                    <p>Classes:	Monday, Wednesday <br>
-                                17:00 - 8:30 <br>
-                                Jabula comunity center, <br>
-                                Sandringham, <br>
-                                Johannesburg </p>
-                    <h6>Private individual/group classes upon request</h6>
+            <section id="defend">
+                <div class="contentWrapper">
+                    <span class="defendSections top_right">
+                        <h1>Violence is <strong>EVERYWHERE</strong></h1>
+                        <p>I can provide you with the skills to transform you from a <strong>victim</strong> to a <strong>survivor</strong></p>
+                    </span>
+                    <span class="defendSections" style="display: flex; flex:1; align-self: center;">
+                        <h1>Krav Maga - Simply survive</h1>
+                        <span style="display: flex; ">
+                        <p>Classes:</p><p style="margin-left: 2%;">Monday, Wednesday <br>
+                                    17:00 - 8:30 <br>
+                                    Jabula community center, <br>
+                                    Sandringham, <br>
+                                    Johannesburg </p>
+                        </span>
+                        <h6>Private individual/group classes upon request</h6>
+                    </span>
+                </div>
             </section>
             <section id="contact" class="wrapper-lg contentWrapper">
                 <h4>Get in touch</h4>
@@ -125,7 +137,7 @@
     </div>
     <footer class="bg-green text-white">
         <div class="footerContainer">
-            <section><strong>Contact</strong><br>
+            <section><strong>Contact</strong> | Marc van Leeuwen<br>
                 <p style="text-align:start">
                     <a href="tel:+27835969868" class="text-black">+27 (83) 5969 868</a><br>
                     <a href="mailto:marc@vanleeuwen.co.za" class="text-black">marc@vanleeuwen.co.za</a>
@@ -137,8 +149,8 @@
             <section>
                 <strong>Location</strong><br>
                 <p style="text-align:end" class="text-black">
-                    Johannesburg,<br>
-                    Gauteng,<br>
+                    Johannesburg,
+                    Gauteng,
                     South Africa
                 </p>
             </section>
